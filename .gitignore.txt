@@ -1,0 +1,68 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules and build directories
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.user
+*.cache
+
+# Environment variables
+.env
+
+# Visual Studio temporary files
+*.csproj.user
+*.rsuser
+*.suo
+*.cache
+*.pdb
+*.opendb
+*.VC.db
+
+# Build results
+bin/
+obj/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+*.exe
+*.dll
+*.pyc
+*.pyo
+*.pdb
+*.mdb
+*.app
+*.ipa
+*.dSYM
+*.nupkg
+
+# Visual Studio specific folders
+.vs/
+.vscode/
+TestResults/
+Generated\ Files/
+node_modules/
+
+# ASP.NET Core
+wwwroot/
+appsettings*.json

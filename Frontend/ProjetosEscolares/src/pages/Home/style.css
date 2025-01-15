@@ -1,0 +1,50 @@
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 350px;
+  margin-top: 100px;
+}
+
+.buttonHome {
+  background-color: #247035;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.buttonHome:hover {
+  background-color: #247035; /* Cor mais escura no hover */
+  transform: translateY(-5px); /* Leve elevação */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.buttonHome:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px;
+}
+
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
