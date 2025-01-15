@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\projetoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|c:\\users\\rodrigomoco\\desktop\\desafiot2m\\backend\\webapi\\webapi\\controllers\\projetocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\projetocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|c:\\users\\rodrigomoco\\desktop\\desafiot2m\\backend\\webapi\\webapi\\services\\iprojetointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\iprojetointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|c:\\users\\rodrigomoco\\desktop\\desafiot2m\\backend\\webapi\\webapi\\profiles\\profileautomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\profiles\\profileautomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|c:\\users\\rodrigomoco\\desktop\\desafiot2m\\backend\\webapi\\webapi\\models\\projeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\projeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|c:\\users\\rodrigomoco\\desktop\\desafiot2m\\backend\\webapi\\webapi\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|c:\\users\\rodrigomoco\\desktop\\desafiot2m\\backend\\webapi\\webapi\\controllers\\projetocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864BD102-9780-4DC2-A846-4A33DBBAEDA0}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\projetocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,20 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IProjetoInterface.cs",
-              "DocumentMoniker": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Services\\IProjetoInterface.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Services\\IProjetoInterface.cs",
-              "ToolTip": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Services\\IProjetoInterface.cs",
-              "RelativeToolTip": "WebAPI\\Services\\IProjetoInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T22:51:32.208Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,22 +44,75 @@
               "RelativeDocumentMoniker": "WebAPI\\Services\\ProjetoService.cs",
               "ToolTip": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Services\\ProjetoService.cs",
               "RelativeToolTip": "WebAPI\\Services\\ProjetoService.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAYwIQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAuwKcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T22:29:29.262Z",
+              "WhenOpened": "2025-01-15T13:09:57.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "IProjetoInterface.cs",
+              "DocumentMoniker": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Services\\IProjetoInterface.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\IProjetoInterface.cs",
+              "ToolTip": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Services\\IProjetoInterface.cs",
+              "RelativeToolTip": "WebAPI\\Services\\IProjetoInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:09:56.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfileAutoMapper.cs",
+              "DocumentMoniker": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Profiles\\ProfileAutoMapper.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Profiles\\ProfileAutoMapper.cs",
+              "ToolTip": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Profiles\\ProfileAutoMapper.cs",
+              "RelativeToolTip": "WebAPI\\Profiles\\ProfileAutoMapper.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:09:49.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Projeto.cs",
+              "DocumentMoniker": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Models\\Projeto.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\Projeto.cs",
+              "ToolTip": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Models\\Projeto.cs",
+              "RelativeToolTip": "WebAPI\\Models\\Projeto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:09:44.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Models\\ResponseModel.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\ResponseModel.cs",
+              "ToolTip": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Models\\ResponseModel.cs",
+              "RelativeToolTip": "WebAPI\\Models\\ResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:09:37.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ProjetoController.cs",
               "DocumentMoniker": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Controllers\\ProjetoController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\ProjetoController.cs",
               "ToolTip": "C:\\Users\\RodrigoMoco\\Desktop\\desafioT2M\\Backend\\WebAPI\\WebAPI\\Controllers\\ProjetoController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\ProjetoController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAwEIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T22:29:09.63Z"
+              "WhenOpened": "2025-01-15T13:09:12.511Z",
+              "EditorCaption": ""
             }
           ]
         }

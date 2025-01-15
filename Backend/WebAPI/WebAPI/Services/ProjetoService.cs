@@ -73,15 +73,15 @@ namespace WebAPI.Services
             return response;
         }
 
- 
-      public async Task<ResponseModel<List<ProjetoListarDto>>> CriarProjeto(ProjetoListarDto projetoListarDto)
+
+        public async Task<ResponseModel<List<ProjetoListarDto>>> CriarProjeto(ProjetoListarDto projetoListarDto)
         {
             ResponseModel<List<ProjetoListarDto>> response = new ResponseModel<List<ProjetoListarDto>>();
 
             using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
             {
 
-                var projetoBanco = await connection.ExecuteAsync("insert into Projeto (NomeDoProjeto, TarefasAssociadas, Prazos, Responsavel) values (@NomeDoProjeto, @TarefasAssociadas, @Prazos, @Responsavel)", projetoListarDto);
+                var projetoBanco = await connection.ExecuteAsync("insert into Projeto (NomeDoProjeto,Turma, TarefasAssociadas, Prazos, Responsavel) values (@NomeDoProjeto,@Turma, @TarefasAssociadas, @Prazos, @Responsavel)", projetoListarDto);
 
                 if (projetoBanco == 0)
 
@@ -99,7 +99,7 @@ namespace WebAPI.Services
                 response.Mensagem = "Projetos listados com sucesso!";
             }
 
-            return response;    
+            return response;
         }
 
         private static async Task<IEnumerable<Projeto>> ListarProjetos(SqlConnection connection)
@@ -115,10 +115,9 @@ namespace WebAPI.Services
 
             using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
             {
-                // Atualiza o projeto no banco de dados e verifica as linhas afetadas
                 var linhasAfetadas = await connection.ExecuteAsync(
-                    "UPDATE Projeto SET NomeDoProjeto = @NomeDoProjeto, TarefasAssociadas = @TarefasAssociadas, Prazos = @Prazos, Responsavel = @Responsavel WHERE Id = @Id",
-                    new { projeto.NomeDoProjeto, projeto.TarefasAssociadas, projeto.Prazos, projeto.Responsavel, Id = projetoId }
+                    "UPDATE Projeto SET NomeDoProjeto = @NomeDoProjeto, Turma = @Turma, TarefasAssociadas = @TarefasAssociadas, Prazos = @Prazos, Responsavel = @Responsavel WHERE Id = @Id",
+                    new { projeto.NomeDoProjeto,projeto.Turma, projeto.TarefasAssociadas, projeto.Prazos, projeto.Responsavel, Id = projetoId }
                 );
 
                 if (linhasAfetadas == 0)
@@ -130,7 +129,6 @@ namespace WebAPI.Services
 
                 var projetos = await ListarProjetos(connection);
 
-                // Mapeia para o DTO
                 var projetosMapeados = _mapper.Map<List<ProjetoListarDto>>(projetos);
 
                 response.Dados = projetosMapeados;
@@ -146,7 +144,7 @@ namespace WebAPI.Services
         {
             ResponseModel<List<ProjetoListarDto>> response = new ResponseModel<List<ProjetoListarDto>>();
 
-            using(var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
             {
                 var projetoBanco = await connection.ExecuteAsync("delete from Projeto where id =@Id", new { Id = projetoId });
                 if (projetoBanco == 0)
@@ -158,7 +156,7 @@ namespace WebAPI.Services
 
                 var projeto = await ListarProjetos(connection);
                 var projetosMapeados = _mapper.Map<List<ProjetoListarDto>>(projeto);
-                response.Dados = projetosMapeados;  // Agora 'Dados' é uma lista de ProjetoListarDto
+                response.Dados = projetosMapeados;
                 response.Mensagem = "Projetos listados com sucesso!";
 
             }
@@ -166,4 +164,4 @@ namespace WebAPI.Services
             return response;
         }
     }
-    }
+}

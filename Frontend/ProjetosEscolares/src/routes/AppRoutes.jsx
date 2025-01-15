@@ -3,7 +3,6 @@ import Home from "../pages/Home";
 import CriarNovoProjeto from "../pages/CriarNovoProjeto";
 import ListarProjetos from "../pages/ListarProjetos";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,5 +30,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-// Corrigido para exportar o router como default
 export default router;

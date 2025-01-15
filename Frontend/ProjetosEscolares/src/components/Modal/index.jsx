@@ -1,4 +1,5 @@
-import "./style.css"; // Arquivo de estilo para o Footer
+import PropTypes from "prop-types";
+import "./style.css";
 
 function Modal({ mensagem, visivel, onClose }) {
   if (!visivel) return null;
@@ -13,5 +14,11 @@ function Modal({ mensagem, visivel, onClose }) {
     </>
   );
 }
+
+Modal.propTypes = {
+  mensagem: PropTypes.string.isRequired,
+  visivel: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 
 export default Modal;

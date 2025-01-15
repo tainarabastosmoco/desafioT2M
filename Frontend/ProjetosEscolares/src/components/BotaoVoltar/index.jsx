@@ -12,7 +12,6 @@ function BotaoVoltar({ caminho = "/" }) {
   );
 }
 
-// Validação de props
 BotaoVoltar.propTypes = {
   caminho: PropTypes.string, // Define que 'caminho' é uma string
 };

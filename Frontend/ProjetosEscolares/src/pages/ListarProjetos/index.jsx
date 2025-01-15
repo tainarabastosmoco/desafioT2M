@@ -11,7 +11,7 @@ function ListarProjetos() {
   const [projetoEditando, setProjetoEditando] = useState(null);
   const [dadosEdicao, setDadosEdicao] = useState({});
   const [modalExclusaoVisivel, setModalExclusaoVisivel] = useState(false);
-  const [modalEdicaoVisivel, setModalEdicaoVisivel] = useState(false); // Novo estado
+  const [modalEdicaoVisivel, setModalEdicaoVisivel] = useState(false);
 
   async function getProjetos() {
     try {
@@ -33,8 +33,8 @@ function ListarProjetos() {
         )
       );
       setProjetoEditando(null);
-      setModalEdicaoVisivel(true); // Mostrar o modal de sucesso de edição
-      setTimeout(() => setModalEdicaoVisivel(false), 3000); // Esconder após 3 segundos
+      setModalEdicaoVisivel(true);
+      setTimeout(() => setModalEdicaoVisivel(false), 3000);
     } catch (error) {
       console.error("Erro ao atualizar o projeto:", error);
     }
@@ -69,14 +69,12 @@ function ListarProjetos() {
 
   return (
     <div>
-      {/* Modal de Exclusão */}
       <Modal
         mensagem="Projeto excluído com sucesso!"
         visivel={modalExclusaoVisivel}
         onClose={() => setModalExclusaoVisivel(false)}
       />
 
-      {/* Modal de Edição */}
       <Modal
         mensagem="Projeto editado com sucesso!"
         visivel={modalEdicaoVisivel}
@@ -87,7 +85,8 @@ function ListarProjetos() {
         projetos.map((projeto) => (
           <div key={projeto.id} className="card">
             {projetoEditando === projeto.id ? (
-              <form className="formEdicao"
+              <form
+                className="formEdicao"
                 onSubmit={(e) => {
                   e.preventDefault();
                   atualizarProjeto(projeto.id);
@@ -95,7 +94,8 @@ function ListarProjetos() {
               >
                 <label>
                   Nome do Projeto:
-                  <input className="editarprojeto"
+                  <input
+                    className="editarprojeto"
                     type="text"
                     name="nomeDoProjeto"
                     value={dadosEdicao.nomeDoProjeto || ""}
@@ -103,8 +103,19 @@ function ListarProjetos() {
                   />
                 </label>
                 <label>
+                  Turma na qual o projeto será realizado:
+                  <input
+                    className="editarprojeto"
+                    type="text"
+                    name="turma"
+                    value={dadosEdicao.turma || ""}
+                    onChange={handleInputChange}
+                  />
+                </label>
+                <label>
                   Tarefas Associadas:
-                  <input className="editarprojeto"
+                  <input
+                    className="editarprojeto"
                     type="text"
                     name="tarefasAssociadas"
                     value={dadosEdicao.tarefasAssociadas || ""}
@@ -112,8 +123,9 @@ function ListarProjetos() {
                   />
                 </label>
                 <label>
-                  Prazos:
-                  <input className="editarprojeto"
+                  Prazo:
+                  <input
+                    className="editarprojeto"
                     type="text"
                     name="prazos"
                     value={dadosEdicao.prazos || ""}
@@ -122,7 +134,8 @@ function ListarProjetos() {
                 </label>
                 <label>
                   Responsável:
-                  <input className="editarprojeto"
+                  <input
+                    className="editarprojeto"
                     type="text"
                     name="responsavel"
                     value={dadosEdicao.responsavel || ""}
@@ -136,25 +149,37 @@ function ListarProjetos() {
               </form>
             ) : (
               <div>
-                <p>
-                  Nome do Projeto: <span>{projeto.nomeDoProjeto}</span>
-                </p>
-                <p>
-                  Tarefas Associadas: <span>{projeto.tarefasAssociadas}</span>
-                </p>
-                <p>
-                  Prazos: <span>{projeto.prazos}</span>
-                </p>
-                <p>
-                  Responsável: <span>{projeto.responsavel}</span>
-                </p>
-                <div className= "iconsC">
-                <button className= "buttonIcons" style={{marginRight:"10px"}} onClick={() => deletarProjeto(projeto.id)}>
-                  <FaTrashAlt />
-                </button>
-                <button className= "buttonIcons" onClick={() => iniciarEdicao(projeto)}>
-                  <BiSolidPencil />
-                </button>
+                <div className="lista">
+                  <p>
+                    Nome do Projeto: <span>{projeto.nomeDoProjeto}</span>
+                  </p>
+                  <p>
+                    Turma na qual o projeto será realizado: <span>{projeto.turma}</span>
+                  </p>
+                  <p>
+                    Tarefas Associadas: <span>{projeto.tarefasAssociadas}</span>
+                  </p>
+                  <p>
+                    Prazo: <span>{projeto.prazos}</span>
+                  </p>
+                  <p>
+                    Responsável: <span>{projeto.responsavel}</span>
+                  </p>
+                </div>
+                <div className="iconsC">
+                  <button
+                    className="buttonIcons"
+                    style={{ marginRight: "10px" }}
+                    onClick={() => deletarProjeto(projeto.id)}
+                  >
+                    <FaTrashAlt />
+                  </button>
+                  <button
+                    className="buttonIcons"
+                    onClick={() => iniciarEdicao(projeto)}
+                  >
+                    <BiSolidPencil />
+                  </button>
                 </div>
               </div>
             )}

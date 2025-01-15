@@ -144,6 +144,10 @@
             "type": "string",
             "nullable": true
           },
+          "turma": {
+            "type": "string",
+            "nullable": true
+          },
           "tarefasAssociadas": {
             "type": "string",
             "nullable": true
@@ -163,6 +167,10 @@
         "type": "object",
         "properties": {
           "nomeDoProjeto": {
+            "type": "string",
+            "nullable": true
+          },
+          "turma": {
             "type": "string",
             "nullable": true
           },

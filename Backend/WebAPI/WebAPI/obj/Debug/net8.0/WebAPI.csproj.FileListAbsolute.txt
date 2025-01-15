@@ -142,3 +142,4 @@ C:\Users\RodrigoMoco\Desktop\desafioT2M\Backend\WebAPI\WebAPI\obj\Debug\net8.0\r
 C:\Users\RodrigoMoco\Desktop\desafioT2M\Backend\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 C:\Users\RodrigoMoco\Desktop\desafioT2M\Backend\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 C:\Users\RodrigoMoco\Desktop\desafioT2M\Backend\WebAPI\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+C:\Users\RodrigoMoco\Desktop\desafioT2M\Backend\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.sourcelink.json

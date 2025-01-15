@@ -1,20 +1,19 @@
 .botao-voltar {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(13, 73, 28); /* Cor consistente com o estilo do app */
-    color: #fff; /* Texto branco */
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px; /* Bordas arredondadas */
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    transition: all 0.3s;
-  }
-  
-  .botao-voltar:hover {
-    background-color: rgb(10, 60, 23); /* Cor mais escura no hover */
-    transform: scale(1.05); /* Leve aumento no tamanho */
-    opacity: 0.9; /* Redução sutil na opacidade */
-  }
-  
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(13, 73, 28);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.botao-voltar:hover {
+  background-color: rgb(10, 60, 23);
+  transform: scale(1.05);
+  opacity: 0.9;
+}

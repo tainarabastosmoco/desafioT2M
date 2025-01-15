@@ -27,13 +27,13 @@
   text-align: center;
   transition: all 0.3s ease-in-out;
   width: 300px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .buttonHome:hover {
-  background-color: #247035; /* Cor mais escura no hover */
-  transform: translateY(-5px); /* Leve elevação */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+  background-color: #247035;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .buttonHome:focus {
